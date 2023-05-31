@@ -1,8 +1,8 @@
 num_amount = int(input("Enter amount of elements in list: "))
 num_amount_enterd__list = list(map(int, input
       ("Enter elements of the list, use space to divine them: ").split()))
-if len(num_amount_enterd__list) != num_amount:
-    print("Error wrong ammount in the list.")
+if len(num_amount_enterd__list) != num_amount or num_amount < 1:
+    print("Error wrong ammount in the list or massiv is empty")
 else:
     count = 0
     x = int(input("Enter number you want to count in the list: "))
